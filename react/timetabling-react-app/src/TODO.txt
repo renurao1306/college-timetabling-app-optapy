@@ -1,0 +1,16 @@
+* TT for MCA Sem 2
+* Try out Grid instead of Stacks in DashboardContent
+* Icons not clickable in Drawer collapsed mode
+* Gap between Drawer and actual screen content
+* Header layout
+* Notifications icon removal
+* Login / logout
+
+
+* Add Validations
+* Download timetable as PDF
+* Plans vs Plan Runs
+* Score explanation
+
+* Refactor styles and components
+* Refactor to use custom hooks instead of functions

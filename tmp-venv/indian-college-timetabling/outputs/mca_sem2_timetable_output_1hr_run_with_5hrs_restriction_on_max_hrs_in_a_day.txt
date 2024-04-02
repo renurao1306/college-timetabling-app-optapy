@@ -1,0 +1,64 @@
+Score is -120hard/-200soft
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+|             | MONDAY      | TUESDAY     | WEDNESDAY   | THURSDAY    | FRIDAY      | SATURDAY    |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 09:00-10:00 | Placements  | MAD         | AJ          | SE          | AWT         | DAP         |
+|             | CL-401      | CR-401      | CR-401      | CR-401      | CL-401      | CR-401      |
+|             | Self        | VAJ         | VRG         | PMI         | VTH         | KMA         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 10:00-11:00 | Placements  | MAD         | AJ          | SE          | AWT         | DAP         |
+|             | CL-401      | CR-401      | CR-401      | CR-401      | CL-401      | CR-401      |
+|             | Self        | VAJ         | VRG         | PMI         | VTH         | KMA         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 11:00-12:00 | Placements  | MAD-Lab     | AJ-Lab      | SE-Lab      | AWT-Lab     | DAP-Lab     |
+|             | CL-401      | CL-401      | CL-401      | CL-401      | CL-401      | CL-401      |
+|             | Self        | AKL         | VRG         | PMI         | VTH         | KMA         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 12:00-13:00 | Placements  | MAD-Lab     | AJ-Lab      | SE-Lab      | AWT-Lab     | DAP-Lab     |
+|             | CL-401      | CL-401      | CL-401      | CL-401      | CL-401      | CL-401      |
+|             | Self        | AKL         | VRG         | PMI         | VTH         | KMA         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 13:00-14:00 | AI-Lab      | ADBMS-Lab   | PS-Lab      | Break       | Break       | Break       |
+|             | CL-401      | CL-401      | CL-401      | Canteen     | Canteen     | Canteen     |
+|             | PSH         | AVI         | MKA         | Chefs       | Chefs       | Chefs       |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+
+
+Score Explanation:
+
+
+Explanation of score (-120hard/-200soft):
+    Constraint match totals:
+        -75hard: constraint (Student group conflict) has 75 matches:
+            -1hard: justifications ([Course(id=7, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None ), Course(id=7, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            -1hard: justifications ([Course(id=7, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None ), Course(id=31, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=45, name=CR-401, type=Classroom), teacher=PSH, type=Classroom, subject=AI, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            ...
+        -45hard: constraint (Teacher conflict) has 45 matches:
+            -1hard: justifications ([Course(id=7, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None ), Course(id=7, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            -1hard: justifications ([Course(id=8, timeslot=Timeslot(id=6, day_of_week=MONDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=2, fixed=0, fixed_timeslot=None, fixed_room=None ), Course(id=8, timeslot=Timeslot(id=6, day_of_week=MONDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=2, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            ...
+        -200soft: constraint (Room type conflict) has 2 matches:
+            -100soft: justifications ([Course(id=23, timeslot=Timeslot(id=45, day_of_week=FRIDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=VTH, type=Clasroom, subject=AWT, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            -100soft: justifications ([Course(id=24, timeslot=Timeslot(id=46, day_of_week=FRIDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=VTH, type=Clasroom, subject=AWT, student_group=MCA Sem2, slot=2, fixed=0, fixed_timeslot=None, fixed_room=None )])
+    Indictments (top 5 of 45):
+        -4hard: indicted object (Course(id=7, timeslot=Timeslot(id=5, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 4 matches:
+            -1hard: constraint (Teacher conflict)
+            -1hard: constraint (Student group conflict)
+            ...
+        -4hard: indicted object (Course(id=8, timeslot=Timeslot(id=6, day_of_week=MONDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=2, fixed=0, fixed_timeslot=None, fixed_room=None )) has 4 matches:
+            -1hard: constraint (Teacher conflict)
+            -1hard: constraint (Student group conflict)
+            ...
+        -4hard: indicted object (Course(id=9, timeslot=Timeslot(id=7, day_of_week=MONDAY, start_time=11:00:00, end_time=12:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=3, fixed=0, fixed_timeslot=None, fixed_room=None )) has 4 matches:
+            -1hard: constraint (Teacher conflict)
+            -1hard: constraint (Student group conflict)
+            ...
+        -4hard: indicted object (Course(id=10, timeslot=Timeslot(id=8, day_of_week=MONDAY, start_time=12:00:00, end_time=13:00:00), room=Room(id=40, name=CL-401, type=Lab), teacher=Self, type=Lab, subject=Placements, student_group=MCA Sem2, slot=4, fixed=0, fixed_timeslot=None, fixed_room=None )) has 4 matches:
+            -1hard: constraint (Teacher conflict)
+            -1hard: constraint (Student group conflict)
+            ...
+        -4hard: indicted object (Course(id=11, timeslot=Timeslot(id=15, day_of_week=TUESDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=45, name=CR-401, type=Classroom), teacher=VAJ, type=Classroom, subject=MAD, student_group=MCA Sem2, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 4 matches:
+            -1hard: constraint (Teacher conflict)
+            -1hard: constraint (Student group conflict)
+            ...
+        ...

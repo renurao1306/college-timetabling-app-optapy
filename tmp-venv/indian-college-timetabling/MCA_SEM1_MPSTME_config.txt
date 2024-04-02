@@ -1,0 +1,8 @@
+MCA SEM 1 MPSTME config:
+
+Class Rooms: CR-47, CL-9, CL-17, CL-19, CL-21, CL-13, CL-5, CL-6
+
+Courses: OS [SFA], DBMS [KMT], CN [ISA], DSA [PSH], JP [HM], WT [ASI], EC [SSI], DT [MST]
+
+Time slots: 1 hourly from 8 am to 6 pm (ends)
+

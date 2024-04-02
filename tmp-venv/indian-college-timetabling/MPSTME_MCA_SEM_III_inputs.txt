@@ -1,0 +1,8 @@
+MPSTME MCA SEM III inputs:
+
+Courses: AI (MVY), ML (PSH), CC (VTH), CS (AVI), MSA (VRG), DEV (VSS), BDA (SSK), BT (ASI), IVRAR (JGO), AT (VTK), GD (PHP), IS (PPA)
+
+Room List: CL-3, CL-4, CL-5, CL-6, CL-7, CL-8, CL-9, CL-10, CL-11, CL-12, CL-13, CL-14, CL-15, CL-16, CL-17, CL-18, CL-19, CL-20, CL-21, CL-22, CL-23, CL-24, CL-25, 
+CL-26, CL-27, CL-28, CL-29, MUP Lab, DSP Lab, DE-I Lab, CE-II Lab, ARVR Lab, CR-46, CR-45, CR-40, CR-42, CR-67, CR-62, CR-5A, CR-53
+
+Timeslots: 08:00 - 09:00 - 17:00-18:00 (finishing at 6 pm)

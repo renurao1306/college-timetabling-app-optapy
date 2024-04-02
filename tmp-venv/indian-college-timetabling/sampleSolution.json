@@ -1,0 +1,307 @@
+{
+    "timeslot_list": [
+        {
+            "id": 1,
+            "day_of_week": "MONDAY",
+            "start_time": "09:00:00",
+            "end_time": "10:00:00"
+        },
+        {
+            "id": 2,
+            "day_of_week": "MONDAY",
+            "start_time": "10:00:00",
+            "end_time": "11:00:00"
+        },
+        {
+            "id": 3,
+            "day_of_week": "TUESDAY",
+            "start_time": "09:00:00",
+            "end_time": "10:00:00"
+        },
+        {
+            "id": 4,
+            "day_of_week": "TUESDAY",
+            "start_time": "10:00:00",
+            "end_time": "11:00:00"
+        },
+        {
+            "id": 50000,
+            "day_of_week": "MONDAY",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "id": 50001,
+            "day_of_week": "TUESDAY",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "id": 50002,
+            "day_of_week": "WEDNESDAY",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "id": 50003,
+            "day_of_week": "THURSDAY",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "id": 50004,
+            "day_of_week": "FRIDAY",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        },
+        {
+            "id": 50005,
+            "day_of_week": "SATURDAY",
+            "start_time": "13:00:00",
+            "end_time": "14:00:00"
+        }
+    ],
+    "room_list": [
+        {
+            "id": 1,
+            "name": "CR-47",
+            "type": "Classroom"
+        },
+        {
+            "id": 2,
+            "name": "CL-1",
+            "type": "Lab"
+        },
+        {
+            "id": 50000,
+            "name": "Canteen",
+            "type": "Classroom"
+        }
+    ],
+    "course_list": [
+        {
+            "id": 1,
+            "subject": "OS",
+            "teacher": "SFA",
+            "type": "Classroom",
+            "student_group": "MCA Sem1",
+            "timeslot": {
+                "id": 1,
+                "day_of_week": "MONDAY",
+                "start_time": "09:00:00",
+                "end_time": "10:00:00"
+            },
+            "room": {
+                "id": 1,
+                "name": "CR-47",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 2,
+            "subject": "OS-Lab",
+            "teacher": "SFA-Lab",
+            "type": "Lab",
+            "student_group": "MCA Sem1",
+            "timeslot": {
+                "id": 2,
+                "day_of_week": "MONDAY",
+                "start_time": "10:00:00",
+                "end_time": "11:00:00"
+            },
+            "room": {
+                "id": 1,
+                "name": "CR-47",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 2000,
+            "subject": "OS-Lab",
+            "teacher": "SFA-Lab",
+            "type": "Lab",
+            "student_group": "MCA Sem1",
+            "timeslot": {
+                "id": 3,
+                "day_of_week": "TUESDAY",
+                "start_time": "09:00:00",
+                "end_time": "10:00:00"
+            },
+            "room": {
+                "id": 1,
+                "name": "CR-47",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 3,
+            "subject": "WT-Lab",
+            "teacher": "ASI-Lab",
+            "type": "Lab",
+            "student_group": "MCA Sem1",
+            "timeslot": {
+                "id": 4,
+                "day_of_week": "TUESDAY",
+                "start_time": "10:00:00",
+                "end_time": "11:00:00"
+            },
+            "room": {
+                "id": 1,
+                "name": "CR-47",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 3000,
+            "subject": "WT-Lab",
+            "teacher": "ASI-Lab",
+            "type": "Lab",
+            "student_group": "MCA Sem1",
+            "timeslot": {
+                "id": 50000,
+                "day_of_week": "MONDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 1,
+                "name": "CR-47",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 4,
+            "subject": "WT",
+            "teacher": "ASI",
+            "type": "Classroom",
+            "student_group": "MCA Sem1",
+            "timeslot": {
+                "id": 50001,
+                "day_of_week": "TUESDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 1,
+                "name": "CR-47",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 50000,
+            "subject": "Lunch Break",
+            "teacher": "Chefs",
+            "type": "Classroom",
+            "student_group": "MCA-SEM1",
+            "timeslot": {
+                "id": 50000,
+                "day_of_week": "MONDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 50000,
+                "name": "Canteen",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 50001,
+            "subject": "Lunch Break",
+            "teacher": "Chefs",
+            "type": "Classroom",
+            "student_group": "MCA-SEM1",
+            "timeslot": {
+                "id": 50001,
+                "day_of_week": "TUESDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 50000,
+                "name": "Canteen",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 50002,
+            "subject": "Lunch Break",
+            "teacher": "Chefs",
+            "type": "Classroom",
+            "student_group": "MCA-SEM1",
+            "timeslot": {
+                "id": 50002,
+                "day_of_week": "WEDNESDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 50000,
+                "name": "Canteen",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 50003,
+            "subject": "Lunch Break",
+            "teacher": "Chefs",
+            "type": "Classroom",
+            "student_group": "MCA-SEM1",
+            "timeslot": {
+                "id": 50003,
+                "day_of_week": "THURSDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 50000,
+                "name": "Canteen",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 50004,
+            "subject": "Lunch Break",
+            "teacher": "Chefs",
+            "type": "Classroom",
+            "student_group": "MCA-SEM1",
+            "timeslot": {
+                "id": 50004,
+                "day_of_week": "FRIDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 50000,
+                "name": "Canteen",
+                "type": "Classroom"
+            }
+        },
+        {
+            "id": 50005,
+            "subject": "Lunch Break",
+            "teacher": "Chefs",
+            "type": "Classroom",
+            "student_group": "MCA-SEM1",
+            "timeslot": {
+                "id": 50005,
+                "day_of_week": "SATURDAY",
+                "start_time": "13:00:00",
+                "end_time": "14:00:00"
+            },
+            "room": {
+                "id": 50000,
+                "name": "Canteen",
+                "type": "Classroom"
+            }
+        }
+    ],
+    "score": {},
+    "_optapy_solver_run_id": [
+        140551120579280,
+        140551118702704,
+        {
+            "hex": "c9f0a0f65b8f11ee95ecac2b6e9a3080"
+        }
+    ]
+}

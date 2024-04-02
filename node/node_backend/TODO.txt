@@ -1,0 +1,8 @@
+Done: Spawn from Node
+Done: Add delimiters for JSON section in Py
+Done: Get the JSON, store in table, and notify on ws
+Done: Provide route to start run
+Done: End-to-end using API
+Done: (BUG FIX) Implementation of update is currently wrong. We require to take both old and new objects (old object will have the values for the where clause); new objects will contain the fields that are changing
+(Optional) Single API call to create a new plan + all the constraints + general run params + trigger the job
+(Optional) All CRUD calls to take arrays as parameters (instead of working on a single row)

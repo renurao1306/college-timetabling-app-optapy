@@ -1,0 +1,70 @@
+06:37:01.185 [main        ] INFO  Solving started: time spent (190), best score (-44init/-6hard/0soft), environment mode (REPRODUCIBLE), move thread count (NONE), random (JDK with seed 0).
+06:37:02.558 [main        ] INFO  Construction Heuristic phase (0) ended: time spent (1564), best score (-28hard/0soft), score calculation speed (9263/sec), step total (22).
+06:37:30.994 [main        ] INFO  Local Search phase (1) ended: time spent (30000), best score (-28hard/0soft), score calculation speed (26697/sec), step total (425313).
+06:37:30.995 [main        ] INFO  Solving ended: time spent (30000), best score (-28hard/0soft), score calculation speed (25685/sec), phase total (2), environment mode (REPRODUCIBLE), move thread count (NONE).
+Reading data from file inputDataGenerated.json
+### In define_constraints, input data is [{'name': 'fixed_slot_conflict', 'enabled': 1, 'type': 'hard', 'weight': 1000, 'params': {}}, {'name': 'fixed_room_conflict', 'enabled': 1, 'type': 'hard', 'weight': 1000, 'params': {}}, {'name': 'not_more_than_n_hours_per_day_conflict', 'enabled': 1, 'type': 'hard', 'weight': 10, 'params': {'max_hrs_in_day': 5}}, {'name': 'room_conflict', 'enabled': 1, 'type': 'hard', 'weight': 1, 'params': {}}, {'name': 'teacher_conflict', 'enabled': 1, 'type': 'hard', 'weight': 1, 'params': {}}, {'name': 'student_group_conflict', 'enabled': 0, 'type': 'hard', 'weight': 1, 'params': {}}, {'name': 'room_type_conflict', 'enabled': 0, 'type': 'hard', 'weight': 0, 'params': {}}, {'name': 'min_hours_per_subject_week_conflict', 'enabled': 0, 'type': 'hard', 'weight': 100, 'params': {'min_hrs_per_week': 1}}, {'name': 'lab_slots_not_back_to_back_conflict', 'enabled': 0, 'type': 'hard', 'weight': 1, 'params': {}}, {'name': 'teacher_room_stability', 'enabled': 0, 'type': 'soft', 'weight': 1, 'params': {}}, {'name': 'teacher_time_efficiency', 'enabled': 0, 'type': 'soft', 'weight': 1, 'params': {}}, {'name': 'student_group_subject_variety', 'enabled': 0, 'type': 'soft', 'weight': 1, 'params': {}}]
+fixed_slot_conflict 1 hard 1000 {}
+In fixed_slot_conflict hard 1000 {}
+fixed_room_conflict 1 hard 1000 {}
+In fixed_room_conflict hard 1000 {}
+not_more_than_n_hours_per_day_conflict 1 hard 10 {'max_hrs_in_day': 5}
+room_conflict 1 hard 1 {}
+In room_conflict hard 1 {}
+teacher_conflict 1 hard 1 {}
+student_group_conflict 0 hard 1 {}
+room_type_conflict 0 hard 0 {}
+min_hours_per_subject_week_conflict 0 hard 100 {'min_hrs_per_week': 1}
+lab_slots_not_back_to_back_conflict 0 hard 1 {}
+teacher_room_stability 0 soft 1 {}
+teacher_time_efficiency 0 soft 1 {}
+student_group_subject_variety 0 soft 1 {}
+### Len of constraints array 5
+Score is -28hard/0soft
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+|             | MONDAY      | TUESDAY     | WEDNESDAY   | THURSDAY    | FRIDAY      | SATURDAY    |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 09:00-10:00 | OS          | DBMS-Lab    | CN-Lab      | JP          | WT-Lab      | DT-Lab      |
+|             | CR-47       | CR-47       | CR-47       | CR-47       | CR-47       | CR-47       |
+|             | SFA         | KMT-Lab     | ISA-Lab     | HM          | ASI-Lab     | MST         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 10:00-11:00 | OS-Lab      | DBMS-Lab    | DSA         | JP-Lab      | WT-Lab      | DT-Lab      |
+|             | CR-47       | CR-47       | CR-47       | CR-47       | CR-47       | CR-47       |
+|             | SFA-Lab     | KMT-Lab     | PSH         | HM-Lab      | ASI-Lab     | MST         |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 11:00-12:00 | OS-Lab      | CN          | DSA-Lab     | JP-Lab      | EC          |             |
+|             | CR-47       | CR-47       | CR-47       | CR-47       | CR-47       |             |
+|             | SFA-Lab     | ISA         | PSH-Lab     | HM-Lab      | SSI         |             |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 12:00-13:00 | DBMS        | CN-Lab      | DSA-Lab     | WT          | DT          |             |
+|             | CR-47       | CR-47       | CR-47       | CR-47       | CR-47       |             |
+|             | KMT         | ISA-Lab     | PSH-Lab     | ASI         | MST         |             |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| 13:00-14:00 | Lunch Break | Lunch Break | Lunch Break | Lunch Break | Lunch Break | Lunch Break |
+|             | Canteen     | Canteen     | Canteen     | Canteen     | Canteen     | Canteen     |
+|             | Chefs       | Chefs       | Chefs       | Chefs       | Chefs       | Chefs       |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+
+
+Score Explanation:
+
+
+Explanation of score (-28hard/0soft):
+    Constraint match totals:
+        -28hard: constraint (Teacher conflict) has 28 matches:
+            -1hard: justifications ([Course(id=1, timeslot=Timeslot(id=1, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA, type=Classroom, subject=OS, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None ), Course(id=1, timeslot=Timeslot(id=1, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA, type=Classroom, subject=OS, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            -1hard: justifications ([Course(id=2, timeslot=Timeslot(id=2, day_of_week=MONDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA-Lab, type=Lab, subject=OS-Lab, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None ), Course(id=2, timeslot=Timeslot(id=2, day_of_week=MONDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA-Lab, type=Lab, subject=OS-Lab, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )])
+            ...
+    Indictments (top 5 of 28):
+        -1hard: indicted object (Course(id=1, timeslot=Timeslot(id=1, day_of_week=MONDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA, type=Classroom, subject=OS, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 1 matches:
+            -1hard: constraint (Teacher conflict)
+        -1hard: indicted object (Course(id=2, timeslot=Timeslot(id=2, day_of_week=MONDAY, start_time=10:00:00, end_time=11:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA-Lab, type=Lab, subject=OS-Lab, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 1 matches:
+            -1hard: constraint (Teacher conflict)
+        -1hard: indicted object (Course(id=200, timeslot=Timeslot(id=3, day_of_week=MONDAY, start_time=11:00:00, end_time=12:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=SFA-Lab, type=Lab, subject=OS-Lab, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 1 matches:
+            -1hard: constraint (Teacher conflict)
+        -1hard: indicted object (Course(id=3, timeslot=Timeslot(id=4, day_of_week=MONDAY, start_time=12:00:00, end_time=13:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=KMT, type=Classroom, subject=DBMS, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 1 matches:
+            -1hard: constraint (Teacher conflict)
+        -1hard: indicted object (Course(id=4, timeslot=Timeslot(id=8, day_of_week=TUESDAY, start_time=09:00:00, end_time=10:00:00), room=Room(id=1, name=CR-47, type=Classroom), teacher=KMT-Lab, type=Lab, subject=DBMS-Lab, student_group=MCA Sem1, slot=1, fixed=0, fixed_timeslot=None, fixed_room=None )) has 1 matches:
+            -1hard: constraint (Teacher conflict)
+        ...
+
